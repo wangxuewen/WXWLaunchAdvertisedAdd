@@ -42,13 +42,17 @@
 #pragma mark - 点击广告
 - (void)activiTap:(UITapGestureRecognizer*)recognizer{
     _isClick = @"1";
-    [self startcloseAnimation];
+    if (self.imgShowAnimation) {
+        [self startcloseAnimation];
+    } else {
+        [self closeAddImgAnimation];
+    }
 }
 
 #pragma mark - 开启关闭动画
 - (void)startcloseAnimation{
     CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    opacityAnimation.duration = self.imgShowAnimation ? 0.5 : 0.01;
+    opacityAnimation.duration = 0.5;
     opacityAnimation.fromValue = [NSNumber numberWithFloat:1.0];
     opacityAnimation.toValue = [NSNumber numberWithFloat:0.3];
     opacityAnimation.removedOnCompletion = NO;
@@ -64,7 +68,11 @@
 
 - (void)skipBtnClick{
     _isClick = @"2";
-    [self startcloseAnimation];
+    if (self.imgShowAnimation) {
+        [self startcloseAnimation];
+    } else {
+        [self closeAddImgAnimation];
+    }
 }
 
 #pragma mark - 关闭动画完成时处理事件
@@ -96,7 +104,11 @@
     if (_adTime == 0) {
         [countDownTimer invalidate];
         countDownTimer = nil;
-        [self startcloseAnimation];
+        if (self.imgShowAnimation) {
+            [self startcloseAnimation];
+        } else {
+            [self closeAddImgAnimation];
+        }
     }else{
         [self.skipBtn setTitle:[NSString stringWithFormat:@"%@ | 跳过",@(_adTime--)] forState:UIControlStateNormal];
     }
@@ -181,16 +193,17 @@
     [self addSubview:self.advertImgView];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(activiTap:)];
     // 允许用户交互
-    self.imgShowAnimation = NO;
     self.advertImgView.userInteractionEnabled = YES;
     [self.advertImgView addGestureRecognizer:tap];
-    CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    opacityAnimation.duration = self.imgShowAnimation ? 0.8 : 0.01;
-    opacityAnimation.fromValue = [NSNumber numberWithFloat:0.0];
-    opacityAnimation.toValue = [NSNumber numberWithFloat:0.8];
-    opacityAnimation.fillMode = kCAFillModeForwards;
-    opacityAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
-    [self.advertImgView.layer addAnimation:opacityAnimation forKey:@"animateOpacity"];
+    if (self.imgShowAnimation) {
+        CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+        opacityAnimation.duration = self.imgShowAnimation ? 0.8 : 0.001;
+        opacityAnimation.fromValue = [NSNumber numberWithFloat:0.0];
+        opacityAnimation.toValue = [NSNumber numberWithFloat:0.8];
+        opacityAnimation.fillMode = kCAFillModeForwards;
+        opacityAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+        [self.advertImgView.layer addAnimation:opacityAnimation forKey:@"animateOpacity"];
+    }
     if ([self isImgCache].length > 0) {
         [_advertImgView sd_setImageWithURL:[NSURL URLWithString:[self isImgCache]] placeholderImage:nil];
     }

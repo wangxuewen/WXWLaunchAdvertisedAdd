@@ -26,11 +26,11 @@
      */
     __weak typeof(self) weakSelf = self;
     [NSObject makeWXWLaunchAdvertiseView:^(WXWLaunchAdvertiseView *imgAdView) {
+        imgAdView.imgShowAnimation = YES;
         //设置广告的类型
         imgAdView.getWXWLaunchImageAdViewType(LogoAdType);
         //设置本地启动图片
         imgAdView.localImgName = @"qidong.gif";
-//        imgAdView.imgShowAnimation = NO;
 //        imgAdView.imgUrl = @"http://172.16.12.44/a1.png";
         //自定义跳过按钮
         imgAdView.skipBgColor = [UIColor grayColor];
