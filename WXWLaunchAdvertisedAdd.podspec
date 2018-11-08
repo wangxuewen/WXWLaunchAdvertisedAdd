@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WXWLaunchAdvertisedAdd"
-  s.version      = "0.0.1"
-  s.summary      = "launchAdvertisedAdd(启动页广告)"
+  s.version      = "0.0.2"
+  s.summary      = "启动页广告添加"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -133,7 +133,7 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "SDWebImage"
   s.dependency "SDWebImage/GIF"
-  s.dependency "Masonry"
+
 
 
 end

@@ -10,6 +10,5 @@ inhibit_all_warnings!
 target 'WXWLaunchAdvertisedAdd' do    
     pod 'SDWebImage'
     pod 'SDWebImage/GIF'
-    pod 'Masonry'
 end
 
