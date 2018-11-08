@@ -181,7 +181,7 @@
     [self addSubview:self.advertImgView];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(activiTap:)];
     // 允许用户交互
-    self.imgShowAnimation = YES;
+    self.imgShowAnimation = NO;
     self.advertImgView.userInteractionEnabled = YES;
     [self.advertImgView addGestureRecognizer:tap];
     CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];

@@ -46,7 +46,7 @@ typedef void (^WXWClickAdvertisement) (const clickType);
 @property (nonatomic, strong) UIColor *skipBgColor;
 ///跳过按钮字体颜色
 @property (nonatomic, strong) UIColor *skipTitleColor;
-///图片显示动画，默认YES
+///图片显示动画，默认NO
 @property (nonatomic, assign) BOOL imgShowAnimation;
 
 @property (nonatomic, copy)WXWClickAdvertisement clickBlock;
