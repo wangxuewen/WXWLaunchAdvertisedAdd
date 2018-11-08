@@ -15,6 +15,11 @@
 		847C3DAB21941280002DAF98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C3DAA21941280002DAF98 /* main.m */; };
 		847C3DB521941281002DAF98 /* WXWLaunchAdvertisedAddTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C3DB421941281002DAF98 /* WXWLaunchAdvertisedAddTests.m */; };
 		847C3DC021941281002DAF98 /* WXWLaunchAdvertisedAddUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C3DBF21941281002DAF98 /* WXWLaunchAdvertisedAddUITests.m */; };
+		847C3DD02194134D002DAF98 /* WXWLaunchAdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C3DCF2194134D002DAF98 /* WXWLaunchAdvertiseView.m */; };
+		847C3DD6219414CE002DAF98 /* NSObject+WXWLaunchAdvertisement.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C3DD5219414CE002DAF98 /* NSObject+WXWLaunchAdvertisement.m */; };
+		847C3DD921941CBA002DAF98 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C3DD821941CBA002DAF98 /* TestViewController.m */; };
+		847C3DDB21942219002DAF98 /* qidong.gif in Resources */ = {isa = PBXBuildFile; fileRef = 847C3DDA21942219002DAF98 /* qidong.gif */; };
+		F99FB7788A06C721E7F16D8D /* Pods_WXWLaunchAdvertisedAdd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84314749EDD63CE30141E366 /* Pods_WXWLaunchAdvertisedAdd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32F4298F756712DE4E8190B7 /* Pods-WXWLaunchAdvertisedAdd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXWLaunchAdvertisedAdd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WXWLaunchAdvertisedAdd/Pods-WXWLaunchAdvertisedAdd.debug.xcconfig"; sourceTree = "<group>"; };
+		84314749EDD63CE30141E366 /* Pods_WXWLaunchAdvertisedAdd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WXWLaunchAdvertisedAdd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		847C3D982194127C002DAF98 /* WXWLaunchAdvertisedAdd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXWLaunchAdvertisedAdd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847C3D9B2194127C002DAF98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		847C3D9C2194127C002DAF98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +58,14 @@
 		847C3DBB21941281002DAF98 /* WXWLaunchAdvertisedAddUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WXWLaunchAdvertisedAddUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		847C3DBF21941281002DAF98 /* WXWLaunchAdvertisedAddUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXWLaunchAdvertisedAddUITests.m; sourceTree = "<group>"; };
 		847C3DC121941281002DAF98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847C3DCE2194134D002DAF98 /* WXWLaunchAdvertiseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXWLaunchAdvertiseView.h; sourceTree = "<group>"; };
+		847C3DCF2194134D002DAF98 /* WXWLaunchAdvertiseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXWLaunchAdvertiseView.m; sourceTree = "<group>"; };
+		847C3DD4219414CE002DAF98 /* NSObject+WXWLaunchAdvertisement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+WXWLaunchAdvertisement.h"; sourceTree = "<group>"; };
+		847C3DD5219414CE002DAF98 /* NSObject+WXWLaunchAdvertisement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WXWLaunchAdvertisement.m"; sourceTree = "<group>"; };
+		847C3DD721941CBA002DAF98 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		847C3DD821941CBA002DAF98 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		847C3DDA21942219002DAF98 /* qidong.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = qidong.gif; sourceTree = "<group>"; };
+		8A96168B07DDED06DBB6F88C /* Pods-WXWLaunchAdvertisedAdd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXWLaunchAdvertisedAdd.release.xcconfig"; path = "Pods/Target Support Files/Pods-WXWLaunchAdvertisedAdd/Pods-WXWLaunchAdvertisedAdd.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99FB7788A06C721E7F16D8D /* Pods_WXWLaunchAdvertisedAdd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +94,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24FD3CC0F687448D1113E387 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84314749EDD63CE30141E366 /* Pods_WXWLaunchAdvertisedAdd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		847C3D8F2194127C002DAF98 = {
 			isa = PBXGroup;
 			children = (
+				847C3DDA21942219002DAF98 /* qidong.gif */,
 				847C3D9A2194127C002DAF98 /* WXWLaunchAdvertisedAdd */,
 				847C3DB321941281002DAF98 /* WXWLaunchAdvertisedAddTests */,
 				847C3DBE21941281002DAF98 /* WXWLaunchAdvertisedAddUITests */,
 				847C3D992194127C002DAF98 /* Products */,
+				B005E7299DE981AEBF688225 /* Pods */,
+				24FD3CC0F687448D1113E387 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +128,13 @@
 		847C3D9A2194127C002DAF98 /* WXWLaunchAdvertisedAdd */ = {
 			isa = PBXGroup;
 			children = (
+				847C3DCD219412BD002DAF98 /* WXWLaunchAdvertisedAdd */,
 				847C3D9B2194127C002DAF98 /* AppDelegate.h */,
 				847C3D9C2194127C002DAF98 /* AppDelegate.m */,
 				847C3D9E2194127C002DAF98 /* ViewController.h */,
 				847C3D9F2194127C002DAF98 /* ViewController.m */,
+				847C3DD721941CBA002DAF98 /* TestViewController.h */,
+				847C3DD821941CBA002DAF98 /* TestViewController.m */,
 				847C3DA12194127D002DAF98 /* Main.storyboard */,
 				847C3DA421941280002DAF98 /* Assets.xcassets */,
 				847C3DA621941280002DAF98 /* LaunchScreen.storyboard */,
@@ -132,6 +162,26 @@
 			path = WXWLaunchAdvertisedAddUITests;
 			sourceTree = "<group>";
 		};
+		847C3DCD219412BD002DAF98 /* WXWLaunchAdvertisedAdd */ = {
+			isa = PBXGroup;
+			children = (
+				847C3DCE2194134D002DAF98 /* WXWLaunchAdvertiseView.h */,
+				847C3DCF2194134D002DAF98 /* WXWLaunchAdvertiseView.m */,
+				847C3DD4219414CE002DAF98 /* NSObject+WXWLaunchAdvertisement.h */,
+				847C3DD5219414CE002DAF98 /* NSObject+WXWLaunchAdvertisement.m */,
+			);
+			path = WXWLaunchAdvertisedAdd;
+			sourceTree = "<group>";
+		};
+		B005E7299DE981AEBF688225 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32F4298F756712DE4E8190B7 /* Pods-WXWLaunchAdvertisedAdd.debug.xcconfig */,
+				8A96168B07DDED06DBB6F88C /* Pods-WXWLaunchAdvertisedAdd.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 847C3DC421941281002DAF98 /* Build configuration list for PBXNativeTarget "WXWLaunchAdvertisedAdd" */;
 			buildPhases = (
+				0C5779D7EB0B0039FFA3C25A /* [CP] Check Pods Manifest.lock */,
 				847C3D942194127C002DAF98 /* Sources */,
 				847C3D952194127C002DAF98 /* Frameworks */,
 				847C3D962194127C002DAF98 /* Resources */,
+				CC588933CECB7F9F079B917B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847C3DDB21942219002DAF98 /* qidong.gif in Resources */,
 				847C3DA821941280002DAF98 /* LaunchScreen.storyboard in Resources */,
 				847C3DA521941280002DAF98 /* Assets.xcassets in Resources */,
 				847C3DA32194127D002DAF98 /* Main.storyboard in Resources */,
@@ -257,13 +310,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C5779D7EB0B0039FFA3C25A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WXWLaunchAdvertisedAdd-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC588933CECB7F9F079B917B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WXWLaunchAdvertisedAdd/Pods-WXWLaunchAdvertisedAdd-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WXWLaunchAdvertisedAdd/Pods-WXWLaunchAdvertisedAdd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		847C3D942194127C002DAF98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847C3DD921941CBA002DAF98 /* TestViewController.m in Sources */,
 				847C3DA02194127C002DAF98 /* ViewController.m in Sources */,
+				847C3DD6219414CE002DAF98 /* NSObject+WXWLaunchAdvertisement.m in Sources */,
 				847C3DAB21941280002DAF98 /* main.m in Sources */,
+				847C3DD02194134D002DAF98 /* WXWLaunchAdvertiseView.m in Sources */,
 				847C3D9D2194127C002DAF98 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,35 +532,41 @@
 		};
 		847C3DC521941281002DAF98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32F4298F756712DE4E8190B7 /* Pods-WXWLaunchAdvertisedAdd.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q7AEAPEXBN;
 				INFOPLIST_FILE = WXWLaunchAdvertisedAdd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wxw.LaunchAdvertiseAdd.WXWLaunchAdvertisedAdd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		847C3DC621941281002DAF98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A96168B07DDED06DBB6F88C /* Pods-WXWLaunchAdvertisedAdd.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q7AEAPEXBN;
 				INFOPLIST_FILE = WXWLaunchAdvertisedAdd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wxw.LaunchAdvertiseAdd.WXWLaunchAdvertisedAdd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

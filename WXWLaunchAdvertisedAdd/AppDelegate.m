@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "TestViewController.h"
+#import "NSObject+WXWLaunchAdvertisement.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,48 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    /* FullScreenAdType 全屏广告
+     * LogoAdType 带logo的广告类似网易广告，值得注意的是启动图片必须带logo图
+     * localAdImgName  本地图片名字
+     */
+    __weak typeof(self) weakSelf = self;
+    [NSObject makeWXWLaunchAdvertiseView:^(WXWLaunchAdvertiseView *imgAdView) {
+        //设置广告的类型
+        imgAdView.getWXWLaunchImageAdViewType(LogoAdType);
+        //设置本地启动图片
+        imgAdView.localImgName = @"qidong.gif";
+        imgAdView.imgShowAnimation = NO;
+//        imgAdView.imgUrl = @"http://172.16.12.44/a1.png";
+        //自定义跳过按钮
+        imgAdView.skipBgColor = [UIColor grayColor];
+        imgAdView.skipTitleColor = [UIColor whiteColor];
+        //各种点击事件的回调
+        
+        imgAdView.clickBlock = ^(clickType type){
+            switch (type) {
+                case clickAdType:{
+                    NSLog(@"点击广告回调");
+                    TestViewController *vc = [[TestViewController alloc]init];
+                    vc.view.backgroundColor = [UIColor whiteColor];
+                    [weakSelf.window.rootViewController presentViewController:vc animated:YES completion:^{
+                        
+                    }];
+                }
+                    break;
+                case skipAdType:
+                    NSLog(@"点击跳过回调");
+                    break;
+                case overtimeAdType:
+                    NSLog(@"倒计时完成后的回调");
+                    break;
+                default:
+                    break;
+            }
+        };
+        
+    }];
+    
     return YES;
 }
 
